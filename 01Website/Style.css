@@ -1,0 +1,150 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.banner
+{
+    width: 100vw;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0, 0, 0,0.75),rgba(0, 0, 0,0.75)),url(./lake-2560x1440-sunset-clouds-windows-12-25411.jpeg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.navbar
+{
+    width :100vw;
+    height: 35px;
+    /* background-color: aquamarine; */
+    display: flex;
+    margin: auto;
+    padding: 35px 0;
+
+    /* margin-top:20px ; */
+    align-items: center;
+    padding: 35px,0;
+    justify-content: space-between;
+    position: fixed;
+
+
+
+}
+.navbar img{
+    width :100 px;
+    height: 60px;
+    border-radius: 10px;
+    margin-left:35px;
+    /* margin-top: 10; */
+    /* padding: 20px; */
+}
+.navbar ul li
+{
+    display: inline-block;
+    list-style: none;
+    /* justify-content: space-betwee; */
+    
+    /* justify-content: flex-start; */
+    /* padding: 20px; */
+    /* padding: 15px; */
+    /* gap: 20px; */
+    /* display: ; */
+    position: relative;
+    margin: 0 20px;
+    /* gap: ; */
+    /* gap: 20px; */
+}
+.navbar ul li a
+{
+    /* columns: ; */
+    color: white;
+    text-decoration: none;
+    
+    text-transform: uppercase;
+    /* margin: 0,20px; */
+   
+}
+.logo
+{
+    /* width: 120px; */
+    cursor: pointer;
+}
+
+.navbar ul li::after
+{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after
+{
+    width: 100%;
+}
+
+.content
+{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    /* background-color: blueviolet; */
+    text-align: center;
+    color: white;
+    /* text-align: center; */
+    /* justify-items: ; */
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 20px;
+}
+.content p
+{
+    /* text-align: center; */
+    /* align-items: center; */
+    /* text-align: justify; */
+    line-height: 25px;
+    font-weight: 100;
+    margin: 20px auto;
+}
+button
+{
+    width: 150px;
+    padding:15px 0;
+    border-radius: 25px;
+    text-align: center;
+    margin: 20px 10px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+
+}
+
+span{
+    background-color: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left:0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.9s;
+}
+button:hover span{
+    width: 100%;
+
+}
+button:hover{
+    background: #009688;
+    /* border: none; */
+}
